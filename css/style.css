@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #181818;
+    background: url('../img/showcase-1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 850px;
+    padding: 1rem 15rem;
+    margin: 10.5rem auto;
+}
+
+/* header  */
+header h3 {
+    font-size: 1.8rem;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+/* countdown content */
+#countdown.countdown-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#countdown .countdown-box {
+    background: rgba(0, 0, 0, 0.65);
+    border: 2px solid #181818;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+#countdown .countdown-box h2 {
+    font-size: 3.8rem;
+    font-weight: 400;
+}
+
+#countdown .countdown-box span {
+    font-size: 1.2rem;
+}
+
+@media(max-width: 870px) {
+    body {
+        height: 100vh;
+        padding: 1rem 2rem;
+    }
+
+    .container {
+        display: block;
+        margin: 2rem auto;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    #countdown.countdown-container {
+        display: block;
+
+    }
+
+    #countdown .countdown-box {
+        margin: 0.5rem 0;
+    }
+
+    #countdown .countdown-box h2 {
+        font-size: 2.5rem;
+    }
+
+}
